@@ -1,6 +1,7 @@
 Wapp::Application.routes.draw do
   
   resources :items 
+ 
 
   get "welcome/index"
   get "static_pages/home"
