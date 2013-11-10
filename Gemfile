@@ -26,25 +26,9 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass'
 
-group :development, :test do
-  gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
-  # The following optional lines are part of the advanced setup.
-  gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails', '4.0.0'
-  gem 'guard-spork', '1.5.0'
-  gem 'childprocess', '0.3.6'
-end
+gem 'pg', '0.17.0'
 
-
-group :production do
-	gem 'pg', '0.17.0'
-end
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
