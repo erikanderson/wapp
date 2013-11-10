@@ -1,6 +1,6 @@
-<h1>Listing items</h1>
+<h1>Item index</h1>
 
-<%= link_to 'New item', new_item_path %>
+<%= link_to 'New item', new_item_path, class: "btn btn-large btn-primary"  %>
 
 <table class='table'>
 	<tr>
@@ -10,8 +10,13 @@
 
 	<% @items.each do |item| %>
 		<tr>
-			<td><%= item.name %></td>
+			<td><%= item.name cccgtgg
+
+			%></td>
 			<td><%= item.notes %></td>
+			<td><%= link_to 'Show', item, class: "btn btn-info" %></td>
+			<td><%= link_to 'Edit', edit_item_path(item), class: "btn btn-warning" %></td>	
+			<td><%= link_to 'Delete', '#', class: "btn btn-danger" %></td>		
 		</tr>
 	<%end %>
 </table>
