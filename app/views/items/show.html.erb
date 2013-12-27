@@ -7,8 +7,11 @@
 <strong>Notes:</strong>
 	<%= @item.notes %>
 </p>
-
-<h3>Add a comment:</h3>
+<hr/>
+<h5>Comments</h5>
+<%= render @item.comments %>
+<hr/>
+<h4>Add a comment:</h4>
 <%= form_for([@item, @item.comments.build]) do |f| %>
 	<p>
 		<%= f.label :commenter %><br />
